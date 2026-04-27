@@ -736,6 +736,8 @@
         }
 
         .quiz-form input, .quiz-form select {
+            width: 100%;
+            box-sizing: border-box;
             padding: 15px;
             border: 2px solid #e5e7eb;
             border-radius: 8px;
@@ -1074,8 +1076,11 @@
             .quiz-form {
                 grid-template-columns: 1fr;
             }
-            .form-group.full-width {
+            .form-group.full-width, .quiz-form .btn {
                 grid-column: span 1;
+            }
+            .quiz-form .btn {
+                font-size: 1rem;
             }
             .section-title { font-size: 2.2rem; }
             
